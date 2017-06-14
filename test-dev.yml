@@ -1,0 +1,33 @@
+jdbc:
+  config:
+    defualtDataSource: 
+      driverClassName: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/operation
+      username: root
+      password: 
+#    dsList: 
+#      - tenant1: 
+#          driverClassName: com.mysql.jdbc.Driver
+#          url: jdbc:mysql://localhost:3306/test
+#          username: root
+#          password: 
+#      - tenant2: 
+#          driverClassName: com.mysql.jdbc.Driver
+#          url: jdbc:mysql://localhost:3306/operation
+#          username: root
+#          password: 
+#      - tenant4: 
+#          driverClassName: com.mysql.jdbc.Driver
+#          url: jdbc:mysql://localhost:3306/test
+#          username: root
+#          password: 
+#      - tenant5: 
+#          driverClassName: com.mysql.jdbc.Driver
+#          url: jdbc:mysql://localhost:3306/test
+#          username: root
+#          password: 
+mybatis: 
+  mapperLocations: classpath:com/orvibo/operation/test/mapper/*.xml
+  typeAliasesPackage: com.orvibo.operation.test.entity
+server: 
+  port: 8089
